@@ -2,8 +2,7 @@
 
 Discord.js guild data management with `nkv.db`.
 
-Requesting the guild object is not resource heavy as it just checks if a guild with that id exists or not (creates it if it doesn't exist).
-
+Requesting the guild object is not resource heavy as it just checks if a guild with that id exists or not (creates it if it doesn't exist).  
 Requesting properties is also not resource heavy as it is cached.
 
 Technically will work for DMs, but requires tinkering with the code.
@@ -48,4 +47,4 @@ client.on("message", (message) => {
 });
 ```
 
-![Image](https://cdn.discordapp.com/attachments/756056630264856646/758623988435386368/Screenshot_from_2020-09-24_12-35-02.png)
+![Demo](https://cdn.discordapp.com/attachments/756056630264856646/758623988435386368/Screenshot_from_2020-09-24_12-35-02.png)

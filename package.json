@@ -1,28 +1,25 @@
 {
-  "name": "guild-data",
-  "version": "0.1.2",
-  "description": "Discord.js guild data management with `nkv.db`.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo I am too lazy to do tests && exit"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uAliFurkanY/guildData.git"
-  },
-  "keywords": [
-    "discord"
-  ],
-  "author": "Ali Furkan YILDIZ",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/uAliFurkanY/guildData/issues"
-  },
-  "homepage": "https://github.com/uAliFurkanY/guildData#readme",
-  "dependencies": {
-    "nkv.db": "^0.1.1"
-  },
-  "devDependencies": {
-    "discord.js": "^12.3.1"
-  }
+	"name": "guild-data",
+	"version": "0.1.4",
+	"description": "Discord.js guild data management with `nkv.db`.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo I am too lazy to do tests && exit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/uAliFurkanY/guildData.git"
+	},
+	"keywords": [
+		"discord"
+	],
+	"author": "Ali Furkan YILDIZ",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/uAliFurkanY/guildData/issues"
+	},
+	"homepage": "https://github.com/uAliFurkanY/guildData#readme",
+	"dependencies": {
+		"nkv.db": "^0.1.1"
+	}
 }

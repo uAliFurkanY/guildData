@@ -1,6 +1,5 @@
 const nkv = require("nkv.db");
 const fdWrapper = require("./fdWrapper");
-const Discord = require("discord.js");
 /**
  * Pass in your client object.
  * @param {Discord.Client} client Your client object.

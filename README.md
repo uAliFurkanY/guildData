@@ -47,3 +47,5 @@ client.on("message", (message) => {
 	}
 });
 ```
+
+![Image](https://cdn.discordapp.com/attachments/756056630264856646/758623988435386368/Screenshot_from_2020-09-24_12-35-02.png)

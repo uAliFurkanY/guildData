@@ -18,7 +18,6 @@ Technically will work for DMs, but requires tinkering with the code.
 #!/usr/bin/env node
 require("dotenv").config();
 const Discord = require("discord.js");
-const gd = require("guild-data");
 const client = new Discord.Client();
 client
 	.login(process.env.TOKEN)
@@ -31,15 +30,20 @@ client
 		process.exit(1);
 	});
 // the `database` argument is useless if you don't want to reuse databases
-gd(client, { prefix: "&", premium: false });
+const gd = require("guild-data")(client, { prefix: "&" });
 
 client.on("message", (message) => {
 	if (message.author.bot || !message.guild) return;
 	const gld = gd(message.guild.id);
 	if (!message.content.startsWith(gld.prefix)) return;
-	if (gld.premium) {
-		// code
+	let args = message.content.trim().slice(gld.prefix.length).split(" ");
+	const command = args.shift();
+	if (command === "get") {
+		message.channel.send(gld[args[0]] || "undefined");
+	} else if (command === "set") {
+		message.channel.send(
+			(gld[args[0]] = args[1] || undefined) || "undefined"
+		);
 	}
-	// more code
 });
 ```

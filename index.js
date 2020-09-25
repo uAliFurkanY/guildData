@@ -54,11 +54,15 @@ function guildData(client, options = {}, database = "guildData") {
 					return options;
 				}
 			})(),
-			set(key, value) {
-				this.cache[key] = value;
+			save() {
 				db.set(id, this.cache);
 			},
+			set(key, value) {
+				this.cache[key] = value;
+				save();
+			},
 			get(key) {
+				if (key === "save") return this.save;
 				return this.cache[key];
 			},
 			has(key) {

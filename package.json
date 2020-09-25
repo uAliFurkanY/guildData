@@ -1,6 +1,6 @@
 {
 	"name": "guild-data",
-	"version": "0.1.5",
+	"version": "0.2.0",
 	"description": "Discord.js guild data management with `nkv.db`.",
 	"main": "index.js",
 	"scripts": {

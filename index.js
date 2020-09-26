@@ -1,5 +1,5 @@
 const nkv = require("nkv.db");
-const fdWrapper = require("./fdWrapper");
+const fdWrapper = require("fd-wrapper");
 /**
  * Pass in your client object.
  * @param {Discord.Client} client Your client object.
